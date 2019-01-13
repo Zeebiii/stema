@@ -191,6 +191,13 @@ CREATE TABLE bagueCeramique (
  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+CREATE TABLE membre (
+    idMembre INT NOT NULL AUTO_INCREMENT,
+    pseudo VARCHAR(30) NOT NULL,
+    mdp VARCHAR(255) NOT NULL,
+    mail VARCHAR(255),
+    CONSTRAINT PK_idMembre PRIMARY KEY (idMembre)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
  -- ============================================================
 --   Insertion des enregistrements

@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="contenu/stema.css"/>
+    <link rel="stylesheet" href="contenu/css/stema.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous"/>  
-    
+
     <title>Bijouterie Stema</title>
 </head>
 <body>
@@ -20,6 +20,21 @@
 
             <div id="log">
                 login
+
+                <form action="controler/logOn.php" method="post">
+
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo..." />
+                    <br/>
+                    <input type="password" name="pass" id="pass" placeholder="Mot de passe..." />
+                    <br/>
+
+                    <input type="submit" value="Log on">
+                    <br/>
+                    <a href="logIn.php">Log in</a>
+                    
+                </form>
+
+
             </div>
 
             <div id="menu">
@@ -29,7 +44,7 @@
                         Acceuil
                     </li>
                     <li class="dropdown">
-                        <a href="view/catalogue.html">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>
+                        Catalogue <i class="fas fa-arrow-down arrowDown"></i>
 
                         <ul>
                             <li><a href="view/baguePerle.html">Nos bagues perle</a></li>
@@ -59,7 +74,11 @@
             <div id="galerie">
                 <h3>Un gros titre</h3>
                 <div id="sliderProd">
-                    
+                    <i class="fas fa-4x fa-angle-double-left"></i>
+                    <img src="contenu/imgCatalogue/Bague_adorable_jaune_Grande.png" alt="FuturSlider"/>
+                    <img src="contenu/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt="FuturSlider"/>
+                    <img src="contenu/imgCatalogue/Bague_ellipses_Grande.png" alt="FuturSlider"/>
+                    <i class="fas fa-4x fa-angle-double-right"></i>
                 </div>
                 <div id="presentation">
 
@@ -106,6 +125,9 @@
         
 
     </div>
+
+
+
 
 </body>
 </html>
