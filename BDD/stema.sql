@@ -265,4 +265,3 @@ INSERT INTO couleur VALUES ('3','Parme');
 -- Table matiere 
 
 INSERT INTO matiere VALUES ('1','Céramique'); 
-
