@@ -228,3 +228,5 @@ INSERT INTO fabricant VALUES ('2','Bellon','');
 INSERT INTO fabricant VALUES ('3','Guy Laroche','');
 INSERT INTO fabricant VALUES ('4','Ultimate Ceramic','');
 INSERT INTO fabricant VALUES ('5','Jeell','');
+
+-- Table typePierrePavage 
