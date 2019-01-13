@@ -230,3 +230,5 @@ INSERT INTO fabricant VALUES ('4','Ultimate Ceramic','');
 INSERT INTO fabricant VALUES ('5','Jeell','');
 
 -- Table typePierrePavage 
+
+INSERT INTO typePierrePavage VALUES ('');
