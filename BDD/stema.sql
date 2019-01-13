@@ -231,4 +231,4 @@ INSERT INTO fabricant VALUES ('5','Jeell','');
 
 -- Table typePierrePavage 
 
-INSERT INTO typePierrePavage VALUES ('');
+INSERT INTO typePierrePavage VALUES ('1','');
