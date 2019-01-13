@@ -245,17 +245,24 @@ INSERT INTO purete VALUES ('3','SI2');
 
 -- Table serti
 
-INSERT INTO serti VALUES ('','');
+INSERT INTO serti VALUES ('1','Serti à Grains');
+INSERT INTO serti VALUES ('2','Serti à Griffes');
+INSERT INTO serti VALUES ('3','Serti Clos');
 
 -- Table formePierreCentrale 
 
-INSERT INTO formePierreCentrale VALUES ('','');
+INSERT INTO formePierreCentrale VALUES ('1','Lentille');
+INSERT INTO formePierreCentrale VALUES ('2','Fleur');
+INSERT INTO formePierreCentrale VALUES ('3','Brillants');
+INSERT INTO formePierreCentrale VALUES ('4','Ovale');
 
 -- Table couleur 
 
-INSERT INTO couleur VALUES ('','');
+INSERT INTO couleur VALUES ('1','Noir');
+INSERT INTO couleur VALUES ('2','H');
+INSERT INTO couleur VALUES ('3','Parme');
 
 -- Table matiere 
 
-INSERT INTO matiere VALUES ('',''); 
+INSERT INTO matiere VALUES ('1','Céramique'); 
 
