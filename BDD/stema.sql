@@ -231,4 +231,31 @@ INSERT INTO fabricant VALUES ('5','Jeell','');
 
 -- Table typePierrePavage 
 
-INSERT INTO typePierrePavage VALUES ('1','');
+INSERT INTO typePierrePavage VALUES ('1','Diamants');
+
+-- Table formePierrePavage 
+
+INSERT INTO formePierrePavage VALUES ('1','Brillants');
+
+-- Table purete 
+
+INSERT INTO purete VALUES ('1','SI1');
+INSERT INTO purete VALUES ('2','P1');
+INSERT INTO purete VALUES ('3','SI2');
+
+-- Table serti
+
+INSERT INTO serti VALUES ('','');
+
+-- Table formePierreCentrale 
+
+INSERT INTO formePierreCentrale VALUES ('','');
+
+-- Table couleur 
+
+INSERT INTO couleur VALUES ('','');
+
+-- Table matiere 
+
+INSERT INTO matiere VALUES ('',''); 
+
