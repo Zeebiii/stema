@@ -88,22 +88,22 @@ CREATE TABLE baguePerle (
     idBaguePerle INT NOT NULL AUTO_INCREMENT,
     libelleBaguePerle VARCHAR(30) NOT NULL,
     refBaguePerle VARCHAR(15) NOT NULL,
-    metalBaguePerle INT,
-    poidsMoyMontureBaguePerle FLOAT,
-    rhodiageBaguePerle INT,
-    pierreCentraleBaguePerle INT,
-    couleurBaguePerle INT, 
-    typePerleBaguePerle INT,
-    fabricantBaguePerle INT,
-    diametrePerleBaguePerle VARCHAR(15), 
-    nbPerleBaguePerle INT,
-    typeSertiBaguePerle INT,
-    poidsTotalCaraBaguePerle FLOAT,
-    pureteBaguePerle  INT,
-    nbPierreBaguePerle  INT,
-    typePierrePavageBaguePerle  INT,
-    formePierrePavageBaguePerle  INT,
-    prixBaguePerle DECIMAL,
+    metalBaguePerle INT NULL,
+    poidsMoyMontureBaguePerle VARCHAR(15) NULL,
+    rhodiageBaguePerle INT NULL,
+    pierreCentraleBaguePerle INT NULL,
+    couleurBaguePerle INT NULL, 
+    typePerleBaguePerle INT NULL,
+    fabricantBaguePerle INT NULL,
+    diametrePerleBaguePerle VARCHAR(15) NULL, 
+    nbPerleBaguePerle INT NULL,
+    typeSertiBaguePerle INT NULL,
+    poidsTotalCaraBaguePerle VARCHAR(20) NULL,
+    pureteBaguePerle  INT NULL,
+    nbPierreBaguePerle  INT NULL,
+    typePierrePavageBaguePerle  INT NULL,
+    formePierrePavageBaguePerle  INT NULL,
+    prixBaguePerle DECIMAL NULL,
     CONSTRAINT PK_idBaguePerle PRIMARY KEY (idBaguePerle),
     CONSTRAINT FK_metalBaguePerle FOREIGN KEY (metalBaguePerle) REFERENCES metal (idMetal),
     CONSTRAINT FK_rhodiageBaguePerle FOREIGN KEY (rhodiageBaguePerle) REFERENCES rhodiage (idRhodiage),
@@ -272,3 +272,17 @@ INSERT INTO couleur VALUES ('3','Parme');
 -- Table matiere 
 
 INSERT INTO matiere VALUES ('1','Céramique'); 
+
+-- Table baguePerle
+
+INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle, rhodiageBaguePerle, pierreCentraleBaguePerle, couleurBaguePerle, typePerleBaguePerle, fabricantBaguePerle, diametrePerleBaguePerle, nbPerleBaguePerle,prixBaguePerle) VALUES ('1','Bague Marae','3929','1','0,90 gr','1','1','1','1','1','5mm','1','169');
+INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle, typePerleBaguePerle, diametrePerleBaguePerle, nbPerleBaguePerle, prixBaguePerle ) VALUES ('2','Bague Only Tahiti','5157','2','1,90 gr','2','9,00 mm','1','289');
+INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle, pierreCentraleBaguePerle,typePerleBaguePerle, diametrePerleBaguePerle,nbPerleBaguePerle,fabricantBaguePerle, prixBaguePerle) VALUES ('3','Bague Paea','3927','2','0,90 gr','1','1','5,50 mm','1','1','159');
+INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle, rhodiageBaguePerle, pierreCentraleBaguePerle, typePerleBaguePerle, diametrePerleBaguePerle,nbPerleBaguePerle, fabricantBaguePerle, prixBaguePerle) VALUES ('4','Bague Morgana','3928','1','1 gr','1','1','1','5,50 mm','1','1','169');
+INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle,rhodiageBaguePerle,pierreCentraleBaguePerle,typePierrePavageBaguePerle,nbPierreBaguePerle,poidsTotalCaraBaguePerle,couleurBaguePerle,pureteBaguePerle, typeSertiBaguePerle,typePerleBaguePerle, diametrePerleBaguePerle,nbPerleBaguePerle, prixBaguePerle) VALUES ('5','Bague Griffon Perlé','3357','1','5,50 gr','1','1','1','17','0,15 carat','2','1','1','2','9,50 mm','1','1790');
+INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle,rhodiageBaguePerle,pierreCentraleBaguePerle, typePierrePavageBaguePerle, formePierrePavageBaguePerle, poidsTotalCaraBaguePerle,couleurBaguePerle,pureteBaguePerle,typeSertiBaguePerle,typePerleBaguePerle,diametrePerleBaguePerle,nbPerleBaguePerle,prixBaguePerle) VALUES ('6','Bague Electre Or Blanc','2489','1','6,50 gr','1','1','1','1','0,75 carat','2','1','1','2','12 mm','1','2999');
+
+
+
+
+
