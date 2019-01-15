@@ -292,3 +292,6 @@ INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsM
 INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsMoyMontureBagueOr, rhodiageBagueOr, prixBagueOr) VALUES ('4','Bague Ellipses','2182','5','9,85 gr','1','790');
 INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsMoyMontureBagueOr, rhodiageBagueOr, prixBagueOr) VALUES ('5','Bague Brindille Or Blanc','4554','3','0,73 gr','1','69');
 
+-- Table bagueCeramique 
+
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique) VALUES ();
