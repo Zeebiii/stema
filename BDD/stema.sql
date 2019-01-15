@@ -122,12 +122,13 @@ CREATE TABLE bagueOr (
     idBagueOr INT NOT NULL AUTO_INCREMENT,
     libelleBagueOr VARCHAR(30) NOT NULL,
     refBagueOr VARCHAR(15) NOT NULL,
-    metalBagueOr INT,
-    poidsMoyMonture FLOAT,
-    hauteurBagueOr FLOAT,
-    epaisseurBagueOr FLOAT,
-    rhodiageBagueOr INT,
-    prixBagueOr DECIMAL,
+    metalBagueOr INT NULL,
+    poidsMoyMontureBagueOr VARCHAR(15) NULL,
+    hauteurBagueOr VARCHAR(15) NULL,
+    epaisseurBagueOr VARCHAR(15) NULL,
+    largeurBagueOr VARCHAR(15) NULL,
+    rhodiageBagueOr INT NULL,
+    prixBagueOr DECIMAL NULL,
     CONSTRAINT PK_idBagueOr PRIMARY KEY (idBagueOr),
     CONSTRAINT FK_metalBagueOr FOREIGN KEY (metalBagueOr) REFERENCES metal (idMetal),
     CONSTRAINT FK_rhodiageBagueOr FOREIGN KEY (rhodiageBagueOr) REFERENCES rhodiage (idRhodiage)
@@ -283,6 +284,11 @@ INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBag
 INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle,rhodiageBaguePerle,pierreCentraleBaguePerle, typePierrePavageBaguePerle, formePierrePavageBaguePerle, poidsTotalCaraBaguePerle,couleurBaguePerle,pureteBaguePerle,typeSertiBaguePerle,typePerleBaguePerle,diametrePerleBaguePerle,nbPerleBaguePerle,prixBaguePerle) VALUES ('6','Bague Electre Or Blanc','2489','1','6,50 gr','1','1','1','1','0,75 carat','2','1','1','2','12 mm','1','2999');
 
 
+-- Table bagueOr
 
-
+INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsMoyMontureBagueOr,hauteurBagueOr,epaisseurBagueOr, prixBagueOr) VALUES ('1','Bague Angel Or Jaune','2679','2','1,25 gr','9,0 mm','9,0 mm','109');
+INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, rhodiageBagueOr, poidsMoyMontureBagueOr,hauteurBagueOr,epaisseurBagueOr, prixBagueOr) VALUES ('2','Bague Angel Or Blanc','2691','1','1','1,25 gr','9,0 mm','9,0 mm','109');
+INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsMoyMontureBagueOr, largeurBagueOr, epaisseurBagueOr, prixBagueOr) VALUES ('3','Bague Adorable Jaune','2197','2','1,80 gr','10,0 mm','10,0 mm','139');
+INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsMoyMontureBagueOr, rhodiageBagueOr, prixBagueOr) VALUES ('4','Bague Ellipses','2182','5','9,85 gr','1','790');
+INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsMoyMontureBagueOr, rhodiageBagueOr, prixBagueOr) VALUES ('5','Bague Brindille Or Blanc','4554','3','0,73 gr','1','69');
 
