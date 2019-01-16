@@ -191,6 +191,16 @@ body
     margin: 10px auto;
 }
 
+#content #galerie h3
+{
+    padding: 15px 0;
+}
+
+#content #galerie #presentation p
+{
+    padding: 15px 0;
+}
+
 
 /* Footer, pied de page */
 
