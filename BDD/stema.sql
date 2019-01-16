@@ -193,7 +193,7 @@ CREATE TABLE bagueCeramique (
     pureteBagueCeramique INT,
     typeSertiBagueCeramique INT,
     epaisseurBagueCeramique VARCHAR(15),
-    couleur2BagueCeramqiue INT,
+    couleur2BagueCeramique INT,
     CONSTRAINT PK_idBagueCeramique PRIMARY KEY (idBagueCeramique),
     CONSTRAINT FK_matiereBagueCeramique FOREIGN KEY (matiereBagueCeramique) REFERENCES matiere (idMatiere),
     CONSTRAINT FK_couleurBagueCeramique FOREIGN KEY (couleurBagueCeramique) REFERENCES couleur (idCouleur),
@@ -204,7 +204,7 @@ CREATE TABLE bagueCeramique (
     CONSTRAINT FK_formePierrePavageBagueCeramique FOREIGN KEY (formePierrePavageBagueCeramique) REFERENCES formePierrePavage (idFormePierrePavage),
     CONSTRAINT FK_pureteBagueCeramique FOREIGN KEY (pureteBagueCeramique) REFERENCES purete (idPurete),
     CONSTRAINT FK_typeSertiBagueCeramique FOREIGN KEY (typeSertiBagueCeramique) REFERENCES serti (idSerti),
-    CONSTRAINT FK_couleur2BagueCeramique FOREIGN KEY (couleur2BagueCeramqiue) REFERENCES couleur2 (idCouleur2),
+    CONSTRAINT FK_couleur2BagueCeramique FOREIGN KEY (couleur2BagueCeramique) REFERENCES couleur2 (idCouleur2),
     CONSTRAINT FK_sexeBagueCeramique FOREIGN KEY (sexeBagueCeramique) REFERENCES sexe (idSexe)
  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -287,6 +287,7 @@ INSERT INTO formePierreCentrale VALUES ('4','Ovale');
 INSERT INTO couleur VALUES ('1','Noir');
 INSERT INTO couleur VALUES ('2','H');
 INSERT INTO couleur VALUES ('3','Parme');
+INSERT INTO couleur VALUES ('4','Blanc');
 
 -- Table matiere 
 
@@ -322,11 +323,11 @@ INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsM
 -- Table bagueCeramique 
 
 INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, matiereBagueCeramique, couleurBagueCeramique, largeurBagueCeramique, sexeBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('1','Bague Black Sparkle','5820','1','1','2,50 mm','1','3','45');
-INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique,largeurBagueCeramique,typePierrePavageBagueCeramique, nbPierreBagueCeramique, poidsTotalCaraBagueCeramique);
-
-
-
-
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique,largeurBagueCeramique,typePierrePavageBagueCeramique, nbPierreBagueCeramique, poidsTotalCaraBagueCeramique, couleur2BagueCeramique, pureteBagueCeramique, typeSertiBagueCeramique, sexeBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('2','Bague Xavelite Noire Diamants','5381','3','0,45 gr','1','1','1','5,8 mm','1','5','0,01 carats','1','2','1','1','4','112');
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique,typePierrePavageBagueCeramique, formePierrePavageBagueCeramique,poidsTotalCaraBagueCeramique,couleur2BagueCeramique, pureteBagueCeramique, typeSertiBagueCeramique, sexeBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('3','Bague Nyx','5405','3','0,60 gr','1','1','1','1','1','0,03 carat','1','2','1','1','4','176');
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique, largeurBagueCeramique, epaisseurBagueCeramique, typePierrePavageBagueCeramique, formePierrePavageBagueCeramique, poidsTotalCaraBagueCeramique, couleur2BagueCeramique, pureteBagueCeramique, typeSertiBagueCeramique, sexeBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('4','Bague Hypnos','5406','3','0,95gr','1','1','1','8,00 mm','4,50 mm','1','1','0,10 carat','1','2','1','1','4','268');
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique, typePierrePavageBagueCeramique, formePierrePavageBagueCeramique, poidsTotalCaraBagueCeramique, couleur2BagueCeramique, pureteBagueCeramique, typeSertiBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('5','Bague White Dawn','5300','1','1,25 gr','1','1','4','1','1','0,27 carat','1','3','1','5','750');
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique, sexeBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('6','Bague Gourmette','5924','1','3,40 gr','1','1','1','1','5','829');
 
 
 
