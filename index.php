@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style/css/stema.css"/>
+    <link rel="stylesheet" href="contenu/css/stema.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous"/>  
 
@@ -74,13 +74,13 @@
         <!-- Contenu de la page -->
 
         <div id="content">
-            <div id="galerie">
+                <div id="galerie">
                 <h3>Un gros titre</h3>
                 <div id="sliderProd">
                     <i class="fas fa-4x fa-angle-double-left"></i>
-                    <img src="style/imgCatalogue/Bague_adorable_jaune_Grande.png" alt="FuturSlider"/>
-                    <img src="style/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt="FuturSlider"/>
-                    <img src="style/imgCatalogue/Bague_ellipses_Grande.png" alt="FuturSlider"/>
+                    <img src="contenu/imgCatalogue/Bague_adorable_jaune_Grande.png" alt="FuturSlider"/>
+                    <img src="contenu/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt="FuturSlider"/>
+                    <img src="contenu/imgCatalogue/Bague_ellipses_Grande.png" alt="FuturSlider"/>
                     <i class="fas fa-4x fa-angle-double-right"></i>
                 </div>
                 <div id="presentation">
