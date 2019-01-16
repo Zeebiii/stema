@@ -1,7 +1,6 @@
 body
 {
-background-color: rgb(207, 207, 207);
-       
+    background-color: rgb(207, 207, 207);
 }
 
 /* Bloc */
@@ -92,13 +91,24 @@ background-color: rgb(207, 207, 207);
     float: none;
     list-style-type: none;
     box-shadow: none; 
-    background-color: rgb(134,134, 134);
+    background-color: rgb(205, 205, 205);
 }
 
-#menu .dropdown ul li, #menu .dropdown ul li a
+ #menu .dropdown ul li a
 {
-    padding-top: 7px;
+    padding: 7px 0;
     height: 100%;
+}
+
+#menu .dropdown .basDropdown:hover
+{
+    padding-bottom: 0;
+}
+
+#menu .dropdown ul a:hover
+{
+    box-shadow: none;
+    background-color: #fff;
 }
 
 .arrowDown
@@ -110,7 +120,16 @@ background-color: rgb(207, 207, 207);
 
 
 
+
+
 /* Log */
+
+#log #fieldsetLog
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 #log input[type=text] , #log input[type=password]
 {

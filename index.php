@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="contenu/css/stema.css"/>
+    <link rel="stylesheet" href="style/css/stema.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous"/>  
 
@@ -23,15 +23,18 @@
 
                 <form action="controler/logOn.php" method="post">
 
-                    <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo..." />
+                    <fieldset id="fieldsetLog">
+
+                    <input type="text" name="pseudo" id="pseudo"/>
                     <br/>
-                    <input type="password" name="pass" id="pass" placeholder="Mot de passe..." />
+                    <input type="password" name="pass" id="pass"/>
                     <br/>
 
-                    <input type="submit" value="Log on">
+                    <input type="submit" value="Log on"/>
                     <br/>
                     <a href="logIn.php">Log in</a>
                     
+                    </fieldset>
                 </form>
 
 
@@ -44,23 +47,23 @@
                         Acceuil
                     </li>
                     <li class="dropdown">
-                        Catalogue <i class="fas fa-arrow-down arrowDown"></i>
+                        <a href="catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>  
 
                         <ul>
-                            <li><a href="view/baguePerle.html">Nos bagues perle</a></li>
-                            <li><a href="view/pierreFine.html">Nos pierres fine</a></li>
-                            <li><a href="view/bagueCeramique.html">Nos bagues ceramique</a></li>
-                            <li><a href="view/bagueOr.html">Nos bagues en or</a></li>
+                            <li><a href="view/baguePerle.php">Nos bagues perle</a></li>
+                            <li><a href="view/pierreFine.php">Nos pierres fine</a></li>
+                            <li><a href="view/bagueCeramique.php">Nos bagues ceramique</a></li>
+                            <li><a href="view/bagueOr.php" class="basDropdown">Nos bagues en or</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="view/boutique.html">Boutique</a>
+                        <a href="view/boutique.php">Boutique</a>
                     </li>
                     <li>
-                        <a href="view/chiffre.html">Chiffres</a> 
+                        <a href="view/chiffre.php">Chiffres</a> 
                     </li>
                     <li class="angleDroit">
-                        <a href="view/contact.html">Contact</a> 
+                        <a href="view/contact.php">Contact</a> 
                     </li>
                 </ul>
 
@@ -75,9 +78,9 @@
                 <h3>Un gros titre</h3>
                 <div id="sliderProd">
                     <i class="fas fa-4x fa-angle-double-left"></i>
-                    <img src="contenu/imgCatalogue/Bague_adorable_jaune_Grande.png" alt="FuturSlider"/>
-                    <img src="contenu/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt="FuturSlider"/>
-                    <img src="contenu/imgCatalogue/Bague_ellipses_Grande.png" alt="FuturSlider"/>
+                    <img src="style/imgCatalogue/Bague_adorable_jaune_Grande.png" alt="FuturSlider"/>
+                    <img src="style/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt="FuturSlider"/>
+                    <img src="style/imgCatalogue/Bague_ellipses_Grande.png" alt="FuturSlider"/>
                     <i class="fas fa-4x fa-angle-double-right"></i>
                 </div>
                 <div id="presentation">
