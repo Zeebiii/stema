@@ -156,21 +156,22 @@ CREATE TABLE baguePierreFine (
     refBaguePierreFine VARCHAR(15) NOT NULL,
     prixBaguePierreFine DECIMAL, 
     metalBaguePierreFine INT,
-    poidsMoyMonture FLOAT,
+    poidsMoyMontureBaguePierreFine VARCHAR(15),
     pierreCentraleBaguePierreFine INT,
     formePierreCentraleBaguePierreFine INT,
-    poidsPierreCentaleBaguePierreFine FLOAT,
+    poidsPierreCentraleBaguePierreFine VARCHAR(15),
     nbPierreCentraleBaguePierreFine INT,
     typeSertiBaguePierreFine INT,
     fabricantBaguePierreFine INT,
-    poidsTotalCaraBaguePierreFine FLOAT,
-    sexeBaguePierreFine VARCHAR(10),
+    poidsTotalCaraBaguePierreFine VARCHAR(15),
+    sexeBaguePierreFine INT,
     CONSTRAINT PK_idBaguePierreFine PRIMARY KEY (idBaguePierreFine),
     CONSTRAINT FK_metalBaguePierreFine FOREIGN KEY (metalBaguePierreFine) REFERENCES metal (idMetal),
     CONSTRAINT FK_pierreCentraleBaguePierreFine FOREIGN KEY (pierreCentraleBaguePierreFine) REFERENCES pierreCentrale (idPierreCentrale),
     CONSTRAINT FK_formePierreCentraleBaguePierreFine FOREIGN KEY (formePierreCentraleBaguePierreFine) REFERENCES formePierreCentrale (idFormePierreCentrale),
     CONSTRAINT FK_typeSertiBaguePierreFine FOREIGN KEY (typeSertiBaguePierreFine) REFERENCES serti (idSerti),
-    CONSTRAINT FK_fabricantBaguePierreFine FOREIGN KEY (fabricantBaguePierreFine) REFERENCES fabricant (idFabricant)
+    CONSTRAINT FK_fabricantBaguePierreFine FOREIGN KEY (fabricantBaguePierreFine) REFERENCES fabricant (idFabricant),
+    CONSTRAINT FK_sexeBaguePierreFine FOREIGN KEY (sexeBaguePierreFine) REFERENCES sexe (idSexe)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE bagueCeramique (
@@ -329,7 +330,11 @@ INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCer
 INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique, typePierrePavageBagueCeramique, formePierrePavageBagueCeramique, poidsTotalCaraBagueCeramique, couleur2BagueCeramique, pureteBagueCeramique, typeSertiBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('5','Bague White Dawn','5300','1','1,25 gr','1','1','4','1','1','0,27 carat','1','3','1','5','750');
 INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique, sexeBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('6','Bague Gourmette','5924','1','3,40 gr','1','1','1','1','5','829');
 
+-- Table baguePierreFine 
 
-
+INSERT INTO baguePierreFine (idBaguePierreFine, libelleBaguePierreFine, refBaguePierreFine, metalBaguePierreFine, poidsMoyMontureBaguePierreFine, pierreCentraleBaguePierreFine, formePierreCentraleBaguePierreFine, poidsPierreCentraleBaguePierreFine, nbPierreCentraleBaguePierreFine, typeSertiBaguePierreFine, fabricantBaguePierreFine, prixBaguePierreFine) VALUES ('1','Bague Lune Violette','5451','2','1,80 gr','2','1','2,00 carats','1','3','2','289');
+INSERT INTO baguePierreFine (idBaguePierreFine, libelleBaguePierreFine, refBaguePierreFine, metalBaguePierreFine, poidsMoyMontureBaguePierreFine, pierreCentraleBaguePierreFine, formePierreCentraleBaguePierreFine, poidsPierreCentraleBaguePierreFine, nbPierreCentraleBaguePierreFine, typeSertiBaguePierreFine, fabricantBaguePierreFine, prixBaguePierreFine) VALUES ('2','Bague Fleur Cognac','5551','2','2,10 gr','3','2','8,00 gr','1','2','2','319');
+INSERT INTO baguePierreFine (idBaguePierreFine, libelleBaguePierreFine, refBaguePierreFine, metalBaguePierreFine, poidsMoyMontureBaguePierreFine, pierreCentraleBaguePierreFine, formePierreCentraleBaguePierreFine, nbPierreCentraleBaguePierreFine, poidsTotalCaraBaguePierreFine, typeSertiBaguePierreFine, fabricantBaguePierreFine, prixBaguePierreFine) VALUES ('3','Bague Néon Améthyste','5370','3','2,10 gr','1','3','42','0,64 carat','2','1','335');
+INSERT INTO baguePierreFine (idBaguePierreFine, libelleBaguePierreFine, refBaguePierreFine, metalBaguePierreFine, poidsMoyMontureBaguePierreFine, pierreCentraleBaguePierreFine, formePierreCentraleBaguePierreFine, poidsPierreCentraleBaguePierreFine, nbPierreCentraleBaguePierreFine, typeSertiBaguePierreFine, sexeBaguePierreFine, prixBaguePierreFine) VALUES ('4','Bague Bora Parme','5640','4','0,75 gr','2','4','0,72 carat','1','3','1','319');
 
 
