@@ -218,6 +218,13 @@ CREATE TABLE membre (
     CONSTRAINT PK_idMembre PRIMARY KEY (idMembre)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE image (
+	idImage INT NOT NULL AUTO_INCREMENT,
+	nomImage VARCHAR(50),
+	urlImage VARCHAR(255),
+	CONSTRAINT PK_idImage PRIMARY KEY (idImage)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 -- ============================================================
 --   Insertion des enregistrements
@@ -337,4 +344,69 @@ INSERT INTO baguePierreFine (idBaguePierreFine, libelleBaguePierreFine, refBague
 INSERT INTO baguePierreFine (idBaguePierreFine, libelleBaguePierreFine, refBaguePierreFine, metalBaguePierreFine, poidsMoyMontureBaguePierreFine, pierreCentraleBaguePierreFine, formePierreCentraleBaguePierreFine, nbPierreCentraleBaguePierreFine, poidsTotalCaraBaguePierreFine, typeSertiBaguePierreFine, fabricantBaguePierreFine, prixBaguePierreFine) VALUES ('3','Bague Néon Améthyste','5370','3','2,10 gr','1','3','42','0,64 carat','2','1','335');
 INSERT INTO baguePierreFine (idBaguePierreFine, libelleBaguePierreFine, refBaguePierreFine, metalBaguePierreFine, poidsMoyMontureBaguePierreFine, pierreCentraleBaguePierreFine, formePierreCentraleBaguePierreFine, poidsPierreCentraleBaguePierreFine, nbPierreCentraleBaguePierreFine, typeSertiBaguePierreFine, sexeBaguePierreFine, prixBaguePierreFine) VALUES ('4','Bague Bora Parme','5640','4','0,75 gr','2','4','0,72 carat','1','3','1','319');
 
+-- Table Image
+
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_adorable_jaune_Petite.png','Bague_adorable_jaune (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_adorable_jaune_Medium.png','Bague_adorable_jaune (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_adorable_jaune_Grande.png','Bague_adorable_jaune (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Angel_Or_Blanc_Petite.png','Bague Angel Or Blanc (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Angel_Or_Blanc_Medium.png','Bague Angel Or Blanc (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png','Bague Angel Or Blanc (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Angel_Or_Jaune_Petite.png','Bague Angel Or Jaune (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Angel_Or_Jaune_Medium.png','Bague Angel Or Jaune (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Angel_Or_Jaune_Grande.png','Bague Angel Or Jaune (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_black_sparkle_Petite.png','Bague black sparkle (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_black_sparkle_Medium.png','Bague black sparkle (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_black_sparkle_Grande.png','Bague black sparkle (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_bora_palme_Petite.png','Bague bora palme (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_bora_palme_Medium.png','Bague bora palme (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_bora_palme_Grande.png','Bague bora palme (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_brindille_or_blanc_Petite.png','Bague brindille or blanc (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_brindille_or_blanc_Medium.png','Bague brindille or blanc (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_brindille_or_blanc_Grande.png','Bague brindille or blanc (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Electre_Or_Blanc_Petite.png','Bague Electre Or Blanc (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Electre_Or_Blanc_Medium.png','Bague Electre Or Blanc (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png','Bague Electre Or Blanc (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_ellipses_Petite.png','Bague ellipses (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_ellipses_Medium.png','Bague ellipses (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_ellipses_Grande.png','Bague ellipses (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_fleur_cognac_Petite.png','Bague fleur cognac (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_fleur_cognac_Medium.png','Bague fleur cognac (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_fleur_cognac_Grande.png','Bague fleur cognac (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Gourmette_Petite.png','Bague Gourmette (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Gourmette_Medium.png','Bague Gourmette (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Gourmette_Grande.png','Bague Gourmette (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Griffon_Perle_Petite.png','Bague Griffon Perle (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Griffon_Perle_Medium.png','Bague Griffon Perle (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Griffon_Perle_Grande.png','Bague Griffon Perle (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Hypnos_Petite.png','Bague Hypnos (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Hypnos_Medium.png','Bague Hypnos (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Hypnos_Grande.png','Bague Hypnos (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_lune_violette_Petite.png','Bague lune violette (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_lune_violette_Medium.png','Bague lune violette (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_lune_violette_Grande.png','Bague lune violette (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Marae_petite.png','Bague Marae (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Marae_Medium.png','Bague Marae (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Marae_Grande.png','Bague Marae (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Morgana_Petite.png','Bague Morgana (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Morgana_Medium.png','Bague Morgana (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Morgana_Grande.png','Bague Morgana (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_néon_améthyste_Petite.png','Bague néon améthyste (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_néon_améthyste_Medium.png','Bague néon améthyste (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_néon_améthyste_Grande.png','Bague néon améthyste (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Nyx_Petite.png','Bague Nyx (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Nyx_Medium.png','Bague Nyx (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Nyx_Grande.png','Bague Nyx (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Only_Tahiti_Petite.png','Bague Only Tahiti (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Only_Tahiti_Medium.png','Bague Only Tahiti (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Only_Tahiti_Grande.png','Bague Only Tahiti (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Paea_Petite.png','Bague Paea (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Paea_Medium.png','Bague Paea (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Paea_Grande.png','Bague Paea (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_White_dawn_Petite.png','Bague White dawn (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_White_dawn_Medium.png','Bague White dawn (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_White_dawn_Grande.png','Bague White dawn (grande)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Xevelite_noire_diamants_Petite.png','Bague Xevelite noire diamants (petite)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Xevelite_noire_diamants_Medium.png','Bague Xevelite noire diamants (moyenne)');
+INSERT INTO image(urlImage, nomImage) VALUES ('files/imgCatalogue/Bague_Xevelite_noire_diamants_Grande.png','Bague Xevelite noire diamants (grande)');
 
