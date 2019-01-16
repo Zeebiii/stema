@@ -15,24 +15,27 @@
         <div id="header">
 
             <div id="logo">
-                <h2>Bijouterie STEMA</h2>
+                <img src="contenu/image/logo.png" alt="LogoMarque">
             </div>
 
             <div id="log">
-                login
 
                 <form action="controler/logOn.php" method="post">
 
                     <fieldset id="fieldsetLog">
 
-                    <input type="text" name="pseudo" id="pseudo"/>
-                    <br/>
-                    <input type="password" name="pass" id="pass"/>
-                    <br/>
+                        <label for="pseudo">Pseudo</label>
+                        <!-- <br/> -->
+                        <input type="text" name="pseudo" id="pseudo"/>
+                        <!-- <br/> -->
+                        <label for="password">password</label>
+                        <!-- <br/> -->
+                        <input type="password" name="pass" id="pass"/>
+                        <!-- <br/> -->
 
-                    <input type="submit" value="Log on"/>
-                    <br/>
-                    <a href="logIn.php">Log in</a>
+                        <input type="submit" value="Log on"/>
+                        <br/>
+                        <a href="logIn.php">Log in</a>
                     
                     </fieldset>
                 </form>
