@@ -83,6 +83,20 @@ CREATE TABLE matiere (
     CONSTRAINT PK_idMatiere PRIMARY KEY (idMatiere)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1; 
 
+CREATE TABLE couleur2(
+    idCouleur2 INT NOT NULL AUTO_INCREMENT,
+    libelleCouleur2 VARCHAR(30),
+    CONSTRAINT PK_idCouleur2 PRIMARY KEY (idCouleur2)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE sexe (
+    idSexe INT NOT NULL AUTO_INCREMENT,
+    libelleSexe VARCHAR(15),
+    CONSTRAINT PK_idSexe PRIMARY KEY (idSexe)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
 
 CREATE TABLE baguePerle (
     idBaguePerle INT NOT NULL AUTO_INCREMENT,
@@ -166,19 +180,20 @@ CREATE TABLE bagueCeramique (
     prixBagueCeramique DECIMAL, 
     matiereBagueCeramique INT,
     couleurBagueCeramique INT,
-    largeurBagueCeramique FLOAT,
-    sexeBagueCeramique VARCHAR(10),
+    largeurBagueCeramique VARCHAR(15),
+    sexeBagueCeramique INT,
     fabricantBagueCeramique INT,
     metalBagueCeramique INT,
-    poidsMoyMonture FLOAT,
+    poidsMoyMontureBagueCeramique VARCHAR(15),
     rhodiageBagueCeramique INT,
     typePierrePavageBagueCeramique INT,
     formePierrePavageBagueCeramique INT,
     nbPierreBagueCeramique INT,
-    poidsTotalCaraBagueCeramique FLOAT,
+    poidsTotalCaraBagueCeramique VARCHAR(15),
     pureteBagueCeramique INT,
     typeSertiBagueCeramique INT,
-    epaisseurBagueCeramique FLOAT,
+    epaisseurBagueCeramique VARCHAR(15),
+    couleur2BagueCeramqiue INT,
     CONSTRAINT PK_idBagueCeramique PRIMARY KEY (idBagueCeramique),
     CONSTRAINT FK_matiereBagueCeramique FOREIGN KEY (matiereBagueCeramique) REFERENCES matiere (idMatiere),
     CONSTRAINT FK_couleurBagueCeramique FOREIGN KEY (couleurBagueCeramique) REFERENCES couleur (idCouleur),
@@ -188,7 +203,9 @@ CREATE TABLE bagueCeramique (
     CONSTRAINT FK_typePierrePavageBagueCeramique FOREIGN KEY (typePierrePavageBagueCeramique) REFERENCES typePierrePavage (idTypePierrePavage),
     CONSTRAINT FK_formePierrePavageBagueCeramique FOREIGN KEY (formePierrePavageBagueCeramique) REFERENCES formePierrePavage (idFormePierrePavage),
     CONSTRAINT FK_pureteBagueCeramique FOREIGN KEY (pureteBagueCeramique) REFERENCES purete (idPurete),
-    CONSTRAINT FK_typeSertiBagueCeramqiue FOREIGN KEY (typeSertiBagueCeramique) REFERENCES serti (idSerti)
+    CONSTRAINT FK_typeSertiBagueCeramique FOREIGN KEY (typeSertiBagueCeramique) REFERENCES serti (idSerti),
+    CONSTRAINT FK_couleur2BagueCeramique FOREIGN KEY (couleur2BagueCeramqiue) REFERENCES couleur2 (idCouleur2),
+    CONSTRAINT FK_sexeBagueCeramique FOREIGN KEY (sexeBagueCeramique) REFERENCES sexe (idSexe)
  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
@@ -200,7 +217,8 @@ CREATE TABLE membre (
     CONSTRAINT PK_idMembre PRIMARY KEY (idMembre)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
- -- ============================================================
+
+-- ============================================================
 --   Insertion des enregistrements
 -- ============================================================
 
@@ -274,6 +292,15 @@ INSERT INTO couleur VALUES ('3','Parme');
 
 INSERT INTO matiere VALUES ('1','Céramique'); 
 
+-- Table couleur2
+
+INSERT INTO couleur2 VALUES ('1','H');
+
+-- Table sexe
+
+INSERT INTO sexe VALUES ('1','Femme');
+INSERT INTO sexe VALUES ('2','Homme');
+
 -- Table baguePerle
 
 INSERT INTO baguePerle (idBaguePerle, libelleBaguePerle, refBaguePerle, metalBaguePerle, poidsMoyMontureBaguePerle, rhodiageBaguePerle, pierreCentraleBaguePerle, couleurBaguePerle, typePerleBaguePerle, fabricantBaguePerle, diametrePerleBaguePerle, nbPerleBaguePerle,prixBaguePerle) VALUES ('1','Bague Marae','3929','1','0,90 gr','1','1','1','1','1','5mm','1','169');
@@ -294,4 +321,14 @@ INSERT INTO bagueOr (idBagueOr, libelleBagueOr, refBagueOr, metalBagueOr, poidsM
 
 -- Table bagueCeramique 
 
-INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique) VALUES ();
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, matiereBagueCeramique, couleurBagueCeramique, largeurBagueCeramique, sexeBagueCeramique, fabricantBagueCeramique, prixBagueCeramique) VALUES ('1','Bague Black Sparkle','5820','1','1','2,50 mm','1','3','45');
+INSERT INTO bagueCeramique (idBagueCeramique, libelleBagueCeramique, refBagueCeramique, metalBagueCeramique, poidsMoyMontureBagueCeramique, rhodiageBagueCeramique, matiereBagueCeramique, couleurBagueCeramique,largeurBagueCeramique,typePierrePavageBagueCeramique, nbPierreBagueCeramique, poidsTotalCaraBagueCeramique);
+
+
+
+
+
+
+
+
+
