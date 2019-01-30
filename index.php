@@ -24,7 +24,7 @@
 
             <div id="log">
 
-                <form action="content/view/logOn.php" method="get">
+                <form action="content/method/logOn.php" method="post">
 
                     <fieldset id="fieldsetLog">
 
