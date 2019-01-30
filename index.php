@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous"/>  
     <script src="content/js/jquery.min.js"></script>
+    <script src="content/js/app.js"></script>
     <script src="content/js/owl.carousel.min.js"></script>
     <title>Bijouterie Stema</title>
 </head>
@@ -18,7 +19,7 @@
         <div id="header">
 
             <div id="logo">
-                <img src="contenu/image/logo.png" alt="LogoMarque">
+                <img src="content/files/image/logo.png" alt="LogoMarque">
             </div>
 
             <div id="log">
@@ -83,11 +84,17 @@
                 <div id="galerie">
                 <h3>Un gros titre</h3>
                 <div id="sliderProd">
-                    <i class="fas fa-4x fa-angle-double-left"></i>
-                    <img src="contenu/imgCatalogue/Bague_adorable_jaune_Grande.png" alt="FuturSlider"/>
-                    <img src="contenu/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt="FuturSlider"/>
-                    <img src="contenu/imgCatalogue/Bague_ellipses_Grande.png" alt="FuturSlider"/>
-                    <i class="fas fa-4x fa-angle-double-right"></i>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_adorable_jaune_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_ellipses_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_Hypnos_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_fleur_cognac_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_Xevelite_noire_diamants_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
+                        <div class="item"><img src="content/files/imgCatalogue/Bague_néon_améthyste_Grande.png" alt=""></div>
+                    </div>
                 </div>
                 <div id="presentation">
 
