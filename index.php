@@ -24,7 +24,7 @@
 
             <div id="log">
 
-                <form action="controler/logOn.php" method="post">
+                <form action="content/view/logOn.php" method="get">
 
                     <fieldset id="fieldsetLog">
 
@@ -39,7 +39,7 @@
 
                         <input type="submit" value="Log on"/>
                         <br/>
-                        <a href="logIn.php">Log in</a>
+                        <a href="content/view/logIn.php">Log in</a>
                     
                     </fieldset>
                 </form>
