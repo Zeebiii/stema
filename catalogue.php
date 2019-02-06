@@ -51,10 +51,10 @@
 
                 <ul>
                     <li class="angleGauchce">
-                        Acceuil
+                        <a href="../../">Acceuil</a> 
                     </li>
                     <li class="dropdown">
-                        <a href="catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>  
+                        Catalogue <i class="fas fa-arrow-down arrowDown"></i>
 
                         <ul>
                             <li><a href="view/baguePerle.php">Nos bagues perle</a></li>
@@ -89,6 +89,12 @@
 
                     <div id="SliderBaguePerle">
 
+                        <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
                         <div class="owl-carousel owl-theme sliderCatalogue">
                             <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
                             <div class="item"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></div>
@@ -104,6 +110,12 @@
                     bague pierre fine
 
                     <div id="SliderBaguePierreFine">
+                    <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
 
                         <div class="owl-carousel sliderBox sliderCatalogue">
                             <div class="item"><img src="../files/imgCatalogue/Bague_lune_violette_Grande.png" alt=""></div>
@@ -115,9 +127,15 @@
                 </div>
 
                 <div id="catalogueBagueCeramique">
-                    bague perle
+                    bague ceramique
 
                     <div id="SliderBagueCeremique">
+                    <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
 
                         <div class="owl-carousel owl-theme sliderCatalogue">
                             <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
@@ -131,9 +149,15 @@
                 </div>
 
                 <div id="catalogueBagueOr">
-                    bague perle
+                    bague or
 
                     <div id="SliderBagueOr">
+                    <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
 
                         <div class="owl-carousel owl-theme sliderCatalogue">
                             <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
@@ -143,6 +167,9 @@
                             <div class="item"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></div>
                             <div class="item"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></div>
                         </div>
+                    </div>
+                    <div class="descCatalogue">
+                        test
                     </div>
                 </div>
 

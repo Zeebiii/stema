@@ -211,6 +211,39 @@ body
     text-align: center;
 }
 
+#content #catalogueBague #catalogueBaguePerle, 
+#content #catalogueBague #catalogueBaguePierreFine, 
+#content #catalogueBague #catalogueBagueCeramique, 
+#content #catalogueBague #catalogueBagueOr 
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#content #catalogueBague #catalogueBaguePerle img, 
+#content #catalogueBague #catalogueBaguePierreFine img, 
+#content #catalogueBague #catalogueBagueCeramique img, 
+#content #catalogueBague #catalogueBagueOr img
+{
+    height: auto;
+    width: 200px;
+}
+
+#content #catalogueBague #catalogueBaguePerle .sliderCatalogue, 
+#content #catalogueBague #catalogueBaguePierreFine .sliderCatalogue, 
+#content #catalogueBague #catalogueBagueCeramique .sliderCatalogue, 
+#content #catalogueBague #catalogueBagueOr .sliderCatalogue
+{
+    width: 80%;
+}
+
+.descCatalogue
+{
+    float: right;
+    width: 20%;
+}
+
+
 /* Footer, pied de page */
 
 #footer{
