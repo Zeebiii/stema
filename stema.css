@@ -1,0 +1,221 @@
+body
+{
+    background-color: rgb(207, 207, 207);
+}
+
+/* Bloc */
+
+#main
+{
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    /* background-color: white; */
+}
+
+#header
+{
+    position: relative;
+    width: 100%; 
+    height: 90px;
+    background-color: red;
+    margin: 0 0;
+}
+
+#logo
+{
+    float: left;
+    width: 100%;
+    /* background-color: #fff; */
+    text-align: center;
+    padding-top: 10px;
+}
+
+#log
+{
+    position: absolute;
+    right: 0;
+    float: right;
+    /* width: 20%; */
+    /* background-color: #fff; */
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+}
+
+
+/* Menu */
+
+#menu 
+{
+    position: absolute;
+    text-align: center;
+    top: 75px;
+    width: 100%;
+    z-index: 15;
+}
+
+#menu ul
+{
+    padding: 0;
+}
+
+#menu ul li
+{
+    width: 20%;
+    float: left;
+    list-style-type: none;
+    box-shadow: 0px 6px 15px rgb(134, 134, 134);
+}
+
+#menu a
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover
+{
+    box-shadow: 0px 10px 15px rgb(134, 134, 134); 
+}
+
+#menu .dropdown ul
+{
+    display: none;
+}
+
+#menu .dropdown:hover ul
+{
+    display: initial;
+}
+
+#menu .dropdown ul li
+{
+    width: 100%;
+    height: 30px;
+    float: none;
+    list-style-type: none;
+    box-shadow: none; 
+    background-color: rgb(205, 205, 205);
+}
+
+ #menu .dropdown ul li a
+{
+    padding: 7px 0;
+    height: 100%;
+}
+
+#menu .dropdown .basDropdown:hover
+{
+    padding-bottom: 0;
+}
+
+#menu .dropdown ul a:hover
+{
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.arrowDown
+{
+    margin: 0 3px 0 0;
+    float: right;
+}
+
+
+
+
+
+
+/* Log */
+
+#log #fieldsetLog
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#log input[type=text] , #log input[type=password]
+{
+    margin: 0;
+    padding: 0;
+}
+
+#log input[type=text]
+{
+    margin: 5px 0;
+}
+
+#log input[type=submit]
+{
+    margin: 4px;
+    border-radius:12px 0 12px 0;
+	background: #d34836;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+    padding:6px 0 6px 0;
+    width: 75px;
+}
+
+#log input[type=submit]:hover
+{
+    transition-duration: 500ms;
+    background: #c0311e;
+}
+
+
+    /* Contenu de la page */
+#content{
+    position: relative;
+    width: 100%;
+    /* height: 600px; */
+    background-color: blueviolet;
+    top: 20px
+}
+
+#content h3
+{
+    text-align: center;
+}
+
+#galerie{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+
+#sliderProd{
+    position: relative;
+    width: 80%;
+    height: 450px;
+    margin: 10px auto;
+}
+
+#content #galerie h3
+{
+    padding: 15px 0;
+}
+
+#content #galerie #presentation p
+{
+    padding: 15px 0;
+}
+
+/* Catalogue */
+
+#content #catalogueBague
+{
+    text-align: center;
+}
+
+/* Footer, pied de page */
+
+#footer{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
