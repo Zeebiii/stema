@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous"/>  
     <script src="../js/jquery.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/sliderCatalogue.js"></script>
     <title>Bijouterie Stema</title>
 </head>
 <body>
@@ -50,10 +51,10 @@
 
                 <ul>
                     <li class="angleGauchce">
-                        Acceuil
+                        <a href="../../">Acceuil</a> 
                     </li>
                     <li class="dropdown">
-                        <a href="catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>  
+                        Catalogue <i class="fas fa-arrow-down arrowDown"></i>
 
                         <ul>
                             <li><a href="view/baguePerle.php">Nos bagues perle</a></li>
@@ -77,8 +78,108 @@
 
         </div>
 
+        <div id="content">
+    
+            <h3>Nos bagues</h3>
 
+            <div id="catalogueBague">
+
+                <div id="catalogueBaguePerle">
+                    bague perle
+
+                    <div id="SliderBaguePerle">
+
+                        <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
+                        <div class="owl-carousel owl-theme sliderCatalogue">
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="catalogueBaguePierreFine">
+                    bague pierre fine
+
+                    <div id="SliderBaguePierreFine">
+                    <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
+
+                        <div class="owl-carousel sliderBox sliderCatalogue">
+                            <div class="item"><img src="../files/imgCatalogue/Bague_lune_violette_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_fleur_cognac_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_néon_améthyste_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_bora_palme_Grande.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="catalogueBagueCeramique">
+                    bague ceramique
+
+                    <div id="SliderBagueCeremique">
+                    <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
+
+                        <div class="owl-carousel owl-theme sliderCatalogue">
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="catalogueBagueOr">
+                    bague or
+
+                    <div id="SliderBagueOr">
+                    <div class="descCatalogue">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
+                            interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
+                            vulputate eget nisi.
+                        </div>
+
+                        <div class="owl-carousel owl-theme sliderCatalogue">
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></div>
+                            <div class="item"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="descCatalogue">
+                        test
+                    </div>
+                </div>
+
+            </div>
+                
+
+            
+        </div>
 
     </div>
+
 </body>
 </html>

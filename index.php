@@ -54,7 +54,7 @@
                         Acceuil
                     </li>
                     <li class="dropdown">
-                        <a href="catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>  
+                        <a href="content/view/catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>  
 
                         <ul>
                             <li><a href="view/baguePerle.php">Nos bagues perle</a></li>
@@ -137,6 +137,10 @@
 
        <div id="footer">
        
+            <?php 
+                include 'content/view/footer.php';
+            ?>
+
        </div>
         
 

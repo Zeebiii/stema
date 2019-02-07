@@ -10,3 +10,4 @@ $(document).ready(function(){
         navText: ['<i class="fas fa-chevron-left fa-2x flecheGauche"></i>','<i class="fas fa-chevron-right fa-2x flecheDroite"></i>']
     });
   });
+
