@@ -85,7 +85,8 @@
             <div id="catalogueBague">
 
                 <div id="catalogueBaguePerle">
-                    bague perle
+                    
+                    <div class="titreSliderBague">bague perle</div>
 
                     <div id="SliderBaguePerle">
 
@@ -94,6 +95,9 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
+                            </br>
+                            <a href="#">Voir plus</a>
+
                         </div>
                         <div class="owl-carousel owl-theme sliderCatalogue">
                             <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
@@ -107,7 +111,8 @@
                 </div>
 
                 <div id="catalogueBaguePierreFine">
-                    bague pierre fine
+                    
+                    <div class="titreSliderBague">bague pierre fine</div>
 
                     <div id="SliderBaguePierreFine">
                     <div class="descCatalogue">
@@ -115,6 +120,9 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
+                            </br>
+                            <a href="#">Voir plus</a>
+
                         </div>
 
                         <div class="owl-carousel sliderBox sliderCatalogue">
@@ -127,7 +135,8 @@
                 </div>
 
                 <div id="catalogueBagueCeramique">
-                    bague ceramique
+                    
+                    <div class="titreSliderBague">bague ceramique</div>
 
                     <div id="SliderBagueCeremique">
                     <div class="descCatalogue">
@@ -135,6 +144,9 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
+                            </br>
+                            <a href="#">Voir plus</a>
+
                         </div>
 
                         <div class="owl-carousel owl-theme sliderCatalogue">
@@ -149,7 +161,9 @@
                 </div>
 
                 <div id="catalogueBagueOr">
-                    bague or
+                    
+                    <div class="titreSliderBague">bague or</div>
+                    
 
                     <div id="SliderBagueOr">
                     <div class="descCatalogue">
@@ -157,6 +171,10 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
+
+                            </br>
+                            <a href="#">Voir plus</a>
+
                         </div>
 
                         <div class="owl-carousel owl-theme sliderCatalogue">
@@ -168,15 +186,19 @@
                             <div class="item"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></div>
                         </div>
                     </div>
-                    <div class="descCatalogue">
-                        test
-                    </div>
+                    
                 </div>
 
             </div>
                 
 
             
+        </div>
+
+        <div id="footer">
+            <?php
+                include 'footer.php';
+            ?>
         </div>
 
     </div>
