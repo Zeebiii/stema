@@ -103,9 +103,9 @@
                         </div>
                         <div class="owl-carousel owl-theme sliderCatalogue">
                             <div class="item"><a href="../files/imgCatalogue/Bague_Marae_Grande.png" data-lightbox="Marae"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" data-lightbox="Marae"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Paea_Grande.png" data-lightbox="Marae"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Morgana_Grande.png" data-lightbox="Marae"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" data-lightbox="Only_Tahiti"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Paea_Grande.png" data-lightbox="Paza"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Morgana_Grande.png" data-lightbox="Morgana"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></a></div>
                             <div class="item"><a href="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" data-lightbox="Griffon_Perle"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></a></div>
                             <div class="item"><a href="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" data-lightbox="Electre_Or_Blanc"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></a></div>
                         </div>
