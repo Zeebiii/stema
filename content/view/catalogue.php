@@ -86,7 +86,7 @@
 
                 <div id="catalogueBaguePerle">
                     
-                    <div class="titreSliderBague">bague perle</div>
+                    <div class="titreSliderBague">Bague perle</div>
 
                     <div id="SliderBaguePerle">
 
@@ -95,7 +95,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
-                            </br>
+                            <br/>
                             <a href="#">Voir plus</a>
 
                         </div>
@@ -112,7 +112,7 @@
 
                 <div id="catalogueBaguePierreFine">
                     
-                    <div class="titreSliderBague">bague pierre fine</div>
+                    <div class="titreSliderBague">Bague pierre fine</div>
 
                     <div id="SliderBaguePierreFine">
                     <div class="descCatalogue">
@@ -120,7 +120,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
-                            </br>
+                            <br/>
                             <a href="#">Voir plus</a>
 
                         </div>
@@ -136,7 +136,7 @@
 
                 <div id="catalogueBagueCeramique">
                     
-                    <div class="titreSliderBague">bague ceramique</div>
+                    <div class="titreSliderBague">Bague ceramique</div>
 
                     <div id="SliderBagueCeremique">
                     <div class="descCatalogue">
@@ -144,7 +144,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus mauris, vulputate in ex nec, 
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
-                            </br>
+                            <br/>
                             <a href="#">Voir plus</a>
 
                         </div>
@@ -162,7 +162,7 @@
 
                 <div id="catalogueBagueOr">
                     
-                    <div class="titreSliderBague">bague or</div>
+                    <div class="titreSliderBague">Bague or</div>
                     
 
                     <div id="SliderBagueOr">
@@ -172,7 +172,7 @@
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
 
-                            </br>
+                            <br/>
                             <a href="#">Voir plus</a>
 
                         </div>
@@ -205,6 +205,3 @@
 
 </body>
 </html>
-
-
-test mes couilles 

@@ -247,6 +247,9 @@ body
     font-size: 30px;
     font-family: ButlerRegular;
     color: #7e1a1e;
+    text-align: left;
+    text-decoration: underline;
+    padding-left: 57px;
 }
 
 .descCatalogue
