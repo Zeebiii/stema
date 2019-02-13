@@ -247,13 +247,24 @@ body
     font-size: 30px;
     font-family: ButlerRegular;
     color: #7e1a1e;
+    text-align: left;
+    text-decoration: underline;
+    padding-left: 57px;
 }
 
 .descCatalogue
 {
     float: right;
     width: 20%;
+    font-family: ButlerRegular;
 }
+
+h3#NosBagues{
+    font-family: ButlerBold;
+    color: #7e1a1e;
+    font-size: 50px;
+}
+
 
 
 /* Footer, pied de page */
