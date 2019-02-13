@@ -80,7 +80,7 @@
 
         <div id="content">
     
-            <h3>Nos bagues</h3>
+            <h3 id="NosBagues">Nos bagues</h3>
 
             <div id="catalogueBague">
 

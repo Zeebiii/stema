@@ -256,7 +256,15 @@ body
 {
     float: right;
     width: 20%;
+    font-family: ButlerRegular;
 }
+
+h3#NosBagues{
+    font-family: ButlerBold;
+    color: #7e1a1e;
+    font-size: 50px;
+}
+
 
 
 /* Footer, pied de page */
