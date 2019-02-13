@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous"/>  
     <script src="../js/jquery.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/sliderCatalogue.js"></script>
+    <script src="../js/appCatalogue.js"></script>
     <title>Bijouterie Stema</title>
 </head>
 <body>
@@ -100,12 +100,12 @@
 
                         </div>
                         <div class="owl-carousel owl-theme sliderCatalogue">
-                            <div class="item"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></div>
-                            <div class="item"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></div>
-                            <div class="item"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></div>
-                            <div class="item"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></div>
-                            <div class="item"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></div>
-                            <div class="item"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></div>
+                            <div class="item"><a href="#"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="#"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></a></div>
                         </div>
                     </div>
                 </div>
