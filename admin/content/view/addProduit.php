@@ -79,13 +79,13 @@
                 <input type="number" name="poidsPierreCentrale" id="poidsPierreCentrale" min=0 step=0.01>
             <br/>
             <label for="nbPierreCentrale">nbPierreCentrale</label>
-                <input type="number" name="nbPierreCentrale" id="nbPierreCentrale" min=0 step=0.01>
+                <input type="number" name="nbPierreCentrale" id="nbPierreCentrale" min=0 step=1>
             <br/>
             <label for="CouleurPierreCentrale">CouleurPierreCentrale</label>
                 <input type="text" name="CouleurPierreCentrale" id="CouleurPierreCentrale">
             <br/>
             <label for="diametrePerle">diametrePerle</label>
-                <input type="text" name="diametrePerle" id="diametrePerle">
+                <input type="number" name="diametrePerle" id="diametrePerle" min=0 step=0.01>
             <br/>
             <label for="typePierre">typePierre</label>
                 <input type="text" name="typePierre" id="typePierre">
@@ -106,7 +106,7 @@
                 <input type="text" name="puretePierrePavage" id="puretePierrePavage">
             <br/>
             <label for="nbPierrePavage">nbPierrePavage</label>
-                <input type="text" name="nbPierrePavage" id="nbPierrePavage">
+                <input type="number" name="nbPierrePavage" id="nbPierrePavage" min=0 step=1>
             <br/>
             <label for="typeSerti">typeSerti</label>
                 <input type="text" name="typeSerti" id="typeSerti">

@@ -12,7 +12,6 @@
     $hauteurProduit = $_POST['hauteur'];
     $poidsProduit = $_POST['poids'];
     $poidsCaratsProduit = $_POST['poidsCarats'];
-
     $rhodiage = $_POST['rhodiage'];
     $pierreCentrale = $_POST['pierreCentrale'];
     $poidsPierreCentrale = $_POST['poidsPierreCentrale'];
