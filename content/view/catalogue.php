@@ -88,7 +88,7 @@
 
                 <div id="catalogueBaguePerle">
                     
-                    <div class="titreSliderBague">Bague perle</div>
+                    <div class="titreSliderBague">Bague Perle</div>
 
                     <div id="SliderBaguePerle">
 
@@ -114,7 +114,7 @@
 
                 <div id="catalogueBaguePierreFine">
                     
-                    <div class="titreSliderBague">Bague pierre fine</div>
+                    <div class="titreSliderBague">Bague Pierre Fine</div>
 
                     <div id="SliderBaguePierreFine">
                     <div class="descCatalogue">
@@ -138,7 +138,7 @@
 
                 <div id="catalogueBagueCeramique">
                     
-                    <div class="titreSliderBague">Bague ceramique</div>
+                    <div class="titreSliderBague">Bague Ceramique</div>
 
                     <div id="SliderBagueCeremique">
                     <div class="descCatalogue">
@@ -164,7 +164,7 @@
 
                 <div id="catalogueBagueOr">
                     
-                    <div class="titreSliderBague">Bague or</div>
+                    <div class="titreSliderBague">Bague Or</div>
                     
 
                     <div id="SliderBagueOr">
