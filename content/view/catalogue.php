@@ -59,20 +59,20 @@
                         Catalogue <i class="fas fa-arrow-down arrowDown"></i>
 
                         <ul>
-                            <li><a href="view/baguePerle.php">Nos bagues perle</a></li>
-                            <li><a href="view/pierreFine.php">Nos pierres fine</a></li>
-                            <li><a href="view/bagueCeramique.php">Nos bagues ceramique</a></li>
-                            <li><a href="view/bagueOr.php" class="basDropdown">Nos bagues en or</a></li>
+                            <li><a href="baguePerle.php">Nos bagues perle</a></li>
+                            <li><a href="pierreFine.php">Nos pierres fine</a></li>
+                            <li><a href="bagueCeramique.php">Nos bagues ceramique</a></li>
+                            <li><a href="bagueOr.php" class="basDropdown">Nos bagues en or</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="view/boutique.php">Boutique</a>
+                        <a href="boutique.php">Boutique</a>
                     </li>
                     <li>
-                        <a href="view/chiffre.php">Chiffres</a> 
+                        <a href="chiffre.php">Chiffres</a> 
                     </li>
                     <li class="angleDroit">
-                        <a href="view/contact.php">Contact</a> 
+                        <a href="contact.php">Contact</a> 
                     </li>
                 </ul>
 
