@@ -2,7 +2,7 @@
 
 // Connect BDD
 
-    define('db_host', 'mysql:host=localhost;dbname=stema');
+    define('db_host', 'mysql:host=localhost;dbname=stema2');
 
     define('db_login', 'root');
 
@@ -20,4 +20,6 @@
 
 
 
+
+    
 ?>

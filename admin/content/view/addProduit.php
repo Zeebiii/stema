@@ -60,8 +60,14 @@
             <label for="hauteur">hauteur du produit</label>
                 <input type="number" name="hauteur" id="hauteur" min=0 step=0.01>
             <br/>
-            <label for="poids">poids du produit</label>
-                <input type="number" name="poids" id="poids" min=0 step=0.01>
+            <label for="poidsMoyen">poids moyen du produit</label>
+                <input type="number" name="poidsMoyen" id="poidsMoyen" min=0 step=0.01>
+            <br/>
+            <label for="poidsMin">poids min du produit</label>
+                <input type="number" name="poidsMin" id="poidsMin" min=0 step=0.01>
+            <br/>
+            <label for="poidsMoyen">poids max du produit</label>
+                <input type="number" name="poidsMax" id="poidsMax" min=0 step=0.01>
             <br/>
             <label for="poidsCarats">poids en carats du produit</label>
                 <input type="number" name="poidsCarats" id="poidsCarats" min=0 step=0.01>
@@ -128,7 +134,7 @@
                 <input type="text" name="refFabriquant" id="refFabriquant">
             <br/>
             <label for="imgProduit">imgProduit</label>
-                <input type="text" name="imgProduit" id="imgProduit">
+                <input type="file" name="imgProduit" id="imgProduit">
             <br/>
             <input type="submit" value="Envoyer">
         </fieldset>

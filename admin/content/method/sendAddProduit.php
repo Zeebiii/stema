@@ -10,7 +10,9 @@
     $matiereProduit = $_POST['matiere'];
     $largeurProduit = $_POST['largeur'];
     $hauteurProduit = $_POST['hauteur'];
-    $poidsProduit = $_POST['poids'];
+    $poidsMoyenProduit = $_POST['poidsMoyen'];
+    $poidsMinProduit = $_POST['poidsMin'];
+    $poidsMaxProduit = $_POST['poidsMax'];
     $poidsCaratsProduit = $_POST['poidsCarats'];
     $rhodiage = $_POST['rhodiage'];
     $pierreCentrale = $_POST['pierreCentrale'];
@@ -40,7 +42,9 @@
                                               matiere,
                                               largeur,
                                               hauteur,
-                                              poids,
+                                              poidsMoyen,
+                                              poidsMin,
+                                              poidsMax,
                                               poidsCarats,
                                               rhodiage,
                                               pierreCentrale,
@@ -68,7 +72,9 @@
                                                                   :matiere,
                                                                   :largeur,
                                                                   :hauteur,
-                                                                  :poids,
+                                                                  :poidsMoyen,
+                                                                  :poidsMin,
+                                                                  :poidsMax,
                                                                   :poidsCarats,
                                                                   :rhodiage,
                                                                   :pierreCentrale,
@@ -102,7 +108,9 @@
         'matiere'=>$matiereProduit,
         'largeur'=>$largeurProduit,
         'hauteur'=>$hauteurProduit,
-        'poids'=>$poidsProduit,
+        'poidsMoyen'=>$poidsMoyenProduit,
+        'poidsMin'=>$poidsMinProduit,
+        'poidsMax'=>$poidsMaxProduit,
         'poidsCarats'=>$poidsCaratsProduit,
         'rhodiage'=>$rhodiage,
         'pierreCentrale'=>$pierreCentrale,

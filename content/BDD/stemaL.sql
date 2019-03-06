@@ -22,7 +22,9 @@ CREATE TABLE produit(
     matiere VARCHAR(15) NULL,
     largeur DECIMAL NULL,
     hauteur DECIMAL NULL,
-    poids DECIMAL NULL,
+    poidsMoyen DECIMAL NULL,
+	poidsMin DECIMAL NULL,
+	poidsMax DECIMAL NULL,
     poidsCarats DECIMAL NULL,
     rhodiage BOOLEAN NULL,
     pierreCentrale VARCHAR(15) NULL,
@@ -55,3 +57,8 @@ INSERT INTO genreProduit(nomGenre) VALUES ('Bague Perle');
 INSERT INTO genreProduit(nomGenre) VALUES ('Bague Pierre Fene');
 INSERT INTO genreProduit(nomGenre) VALUES ('Bague Ceramique');
 INSERT INTO genreProduit(nomGenre) VALUES ('Bague Or');
+
+INSERT INTO produit(genreProduit, nomProduit, refProduit, prixProduit, metal, matiere, largeur, hauteur, poids, poidsCarats, rhodiage, pierreCentrale, poidsPierreCentrale, 
+                    nombrePierreCentrale, couleurPierreCentre, typePerle, diametrePerle, nombrePerle, typePierrePavage, formePierrePavage, couleurPierrePavage, 
+                    puretePierrePavage, nombrePierrePavage, typeDeSerti, descriptionProduit, sexe, fabriquant, refFabriquant, imageProduit) 
+VALUES ()
