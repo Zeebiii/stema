@@ -1,3 +1,27 @@
+<?php
+
+    include '../BDD/app.php';
+
+    $reqOr = $bdd->query('SELECT * FROM produit WHERE genreProduit = (SELECT id FROM genreProduit WHERE nomGenre = "Bague Perle") ');
+
+    // while($affOr = $reqOr->fetch(PDO::FETCH_BOTH))
+    // {
+    //     echo "test";
+    //     echo $affOr["idProduit"];
+    //     echo $affOr[1];
+    // }    
+   
+    while($affOr = $reqOr->fetchObject()) {
+        echo " ";
+        echo $affOr->idProduit;
+    }    
+    
+
+
+
+?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="en">
 <head>
@@ -128,6 +152,13 @@
                         </div>
 
                         <div class="owl-carousel sliderBox sliderCatalogue">
+
+                            <?php
+
+                                
+
+                            ?>
+
                             <div class="item"><a href="../files/imgCatalogue/Bague_lune_violette_Grande.png" data-lightbox="lune_violette"><img src="../files/imgCatalogue/Bague_lune_violette_Grande.png" alt=""></a></div>
                             <div class="item"><a href="../files/imgCatalogue/Bague_fleur_cognac_Grande.png" data-lightbox="fleur_cognac"><img src="../files/imgCatalogue/Bague_fleur_cognac_Grande.png" alt=""></a></div>
                             <div class="item"><a href="../files/imgCatalogue/Bague_neon_amethyste_Grande.png" data-lightbox="neon_amethyste"><img src="../files/imgCatalogue/Bague_neon_amethyste_Grande.png" alt=""></a></div>

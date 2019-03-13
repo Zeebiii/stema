@@ -19,7 +19,10 @@
     }
 
 
+    $req = $bdd->query('SELECT COUNT(*) AS nbType FROM genreProduit');
+    $nbTypeProduit = $req->fetch();
 
 
-    
+
+
 ?>
