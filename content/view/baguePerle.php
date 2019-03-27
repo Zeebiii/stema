@@ -1,3 +1,8 @@
+<?php
+    include '../BDD/app.php';
+    $reqPerle = $bdd->query('SELECT * FROM produit WHERE genreProduit = (SELECT id FROM genreProduit WHERE nomGenre = "Bague Perle") ');
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="en">
 <head>
@@ -32,13 +37,13 @@
 
                 <ul>
                     <li class="angleGauchce">
-                        <a href="../">Acceuil</a> 
+                        <a href="../../">Acceuil</a> 
                     </li>
                     <li class="dropdown">
                         <a href="catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>
 
                         <ul>
-                            <li>Nos bagues perle</li>
+                            <li class="activeMenu">Nos bagues perle</li>
                             <li><a href="pierreFine.php">Nos pierres fine</a></li>
                             <li><a href="bagueCeramique.php">¨Nos bagues ceramique</a></li>
                             <li><a href="bagueOr.php">Nos bagues en or</a></li>
@@ -56,8 +61,45 @@
                 </ul>
 
             </div>
-
         </div>
+
+        <div id="content">
+        
+        <div class="listeBagueType">
+        <?php
+            while($affPerle = $reqPerle->fetchObject()){
+                ?>
+                    <div class="bague">
+                        <a href="afficherBague.php?id=<?=$affPerle->idProduit?>">
+                            <img src="<?=$affPerle->imageProduit?>" alt="<?=$affPerle->nomProduit?>">
+                        </a>
+                    </div>
+                    
+                    
+
+
+                <?php
+            }
+        ?>
+        </div>
+        
+        
+
+
+        
+        
+        
+        
+        
+        
+        </div>
+
+
+
+
+
+
+
 
         <div id="footer">
 

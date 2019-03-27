@@ -20,19 +20,40 @@
 
         <div id="header">
 
-            <div id="logo">
-                <h2>Bijouterie STEMA</h2>
-            </div>
+        <div id="logo">
+            <img src="../files/image/logo.png" alt="LogoMarque">
+        </div>
 
-            <div id="log">
-                login
-            </div>
+        <div id="log">
+
+            <form action="content/method/logOn.php" method="post">
+
+                <fieldset id="fieldsetLog">
+
+                    <label for="pseudo">Pseudo</label>
+                    <!-- <br/> -->
+                    <input type="text" name="pseudo" id="pseudo"/>
+                    <!-- <br/> -->
+                    <label for="password">password</label>
+                    <!-- <br/> -->
+                    <input type="password" name="pass" id="pass"/>
+                    <!-- <br/> -->
+
+                    <input type="submit" value="Log on"/>
+                    <br/>
+                    <a href="content/view/logIn.php">Log in</a>
+                
+                </fieldset>
+            </form>
+
+
+        </div>
 
             <div id="menu">
 
                 <ul>
                     <li class="angleGauchce">
-                        <a href="../">Acceuil</a> 
+                        <a href="../../">Acceuil</a> 
                     </li>
                     <li class="dropdown">
                         <a href="catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>

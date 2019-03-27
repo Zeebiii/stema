@@ -18,21 +18,22 @@ CREATE TABLE produit(
     nomProduit VARCHAR(30) NULL,
     refProduit VARCHAR(15) NULL,
     prixProduit DECIMAL NULL,
-    metal VARCHAR(15) NULL,
+    metal VARCHAR(25) NULL,
     matiere VARCHAR(15) NULL,
-    largeur DECIMAL NULL,
-    hauteur DECIMAL NULL,
-    poidsMoyen DECIMAL NULL,
-	poidsMin DECIMAL NULL,
-	poidsMax DECIMAL NULL,
-    poidsCarats DECIMAL NULL,
+    largeur VARCHAR(15) NULL,
+    hauteur VARCHAR(15) NULL,
+    poidsMoyen VARCHAR(15) NULL,
+	poidsMin VARCHAR(15) NULL,
+	poidsMax VARCHAR(15) NULL,
+    poidsCarats VARCHAR(15) NULL,
     rhodiage BOOLEAN NULL,
     pierreCentrale VARCHAR(15) NULL,
     poidsPierreCentrale DECIMAL NULL,
     nombrePierreCentrale TINYINT UNSIGNED NULL,
     couleurPierreCentre VARCHAR(15) NULL,
+    couleur VARCHAR(15) NULL,
     typePerle VARCHAR(15) NULL,
-    diametrePerle DECIMAL NULL,
+    diametrePerle VARCHAR(15) NULL,
     nombrePerle TINYINT UNSIGNED NULL,
     typePierrePavage VARCHAR(15) NULL,
     formePierrePavage VARCHAR(15) NULL,
@@ -54,11 +55,21 @@ CREATE TABLE produit(
 -- ============================================================
 
 INSERT INTO genreProduit(nomGenre) VALUES ('Bague Perle');
-INSERT INTO genreProduit(nomGenre) VALUES ('Bague Pierre Fene');
+INSERT INTO genreProduit(nomGenre) VALUES ('Bague Pierre Fine');
 INSERT INTO genreProduit(nomGenre) VALUES ('Bague Ceramique');
 INSERT INTO genreProduit(nomGenre) VALUES ('Bague Or');
 
 INSERT INTO produit(genreProduit, nomProduit, refProduit, prixProduit, metal, matiere, largeur, hauteur, poids, poidsCarats, rhodiage, pierreCentrale, poidsPierreCentrale, 
                     nombrePierreCentrale, couleurPierreCentre, typePerle, diametrePerle, nombrePerle, typePierrePavage, formePierrePavage, couleurPierrePavage, 
-                    puretePierrePavage, nombrePierrePavage, typeDeSerti, descriptionProduit, sexe, fabriquant, refFabriquant, imageProduit) 
-VALUES ()
+                    puretePierrePavage, nombrePierrePavage, typeDeSerti, descriptionProduit, sexe, fabriquant, refFabriquant, imageProduit) VALUES ();
+
+INSERT INTO produit(genreProduit, nomProduit, refProduit, prixProduit, metal, poidsMoyen, rhodiage, pierreCentrale,
+                    couleurPierreCentre, typePerle, couleur, diametrePerle, nombrePerle, descriptionProduit, fabriquant, imageProduit) 
+                    VALUES ('Bague Perle','Bague Marae','3929',169.00,'Or Blanc 18 carats','0.90 gramme',TRUE,'Perle','Noire','5,00 - 5,50 mm',1,'Ravissante bague en or blanc palladié rhodié 18 carats composée d&#39;un fil en argent couronné d&#39;une perle de culture d&#39;eau douce d&#39;un diamètre de
+5,00 millimètres.
+Poids d&#39;or moyen : 0,90 gramme.
+Modernes et élégantes, toutes en rondeur et en mouvement, les créations JOELLI mêlent allure et raffinement pour sublimer la féminité.
+Plaisir au toucher et au regard, proportions parfaites, pluie de diamants ou tourbillon de couleurs, JOELLI est un hymne au sens...
+Les pierres précieuses sont naturelles. Chaque rubis, saphir, émeraude est unique. Leur couleur change selon l&#39;ambiance lumineuse. Les bijoux
+JOELLI proposent un standard de qualité joaillerie par la taille, la couleur et la pureté de chaque pierre. Et conformément aux résolutions des
+Nations Unies, les diamants JOELLI proviennent de sources officielles non liées au financement de conflits.', 'Joelli','..\content\files\imgCatalogue\Bague_Marae_Grande.png');

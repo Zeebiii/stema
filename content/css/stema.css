@@ -102,12 +102,19 @@ body
     list-style-type: none;
     box-shadow: none; 
     background-color: rgb(205, 205, 205);
+    /* padding: 7px 0; */
+    height: 100%;
 }
 
  #menu .dropdown ul li a
 {
     padding: 7px 0;
     height: 100%;
+}
+
+#menu .dropdown ul li .activeMenu
+{
+    padding: 7px 0;
 }
 
 #menu .dropdown .basDropdown:hover
@@ -195,7 +202,7 @@ body
 #sliderProd{
     position: relative;
     width: 80%;
-    height: 450px;
+    height: 330px;
     margin: 10px auto;
 }
 
@@ -206,7 +213,7 @@ body
 
 #content #galerie #presentation p
 {
-    padding: 15px 0;
+    padding: 15px;
 }
 
 /* Catalogue */
@@ -269,9 +276,37 @@ h3#NosBagues{
     text-decoration: underline;
 }
 
+/* bague */
 
+.listeBagueType
+{
+    text-align: center;
+    margin: 30px 10%;
+    columns: 3;
+}
 
-/* Footer, pied de page */
+.bague
+{
+    margin-bottom: 10px;
+    border: solid 1px grey;
+    width: 375px;
+    opacity: 1;
+    /* background-color: #262930; */
+}
+
+.bague:hover
+{
+    opacity: 0.5;
+    background-color: rgb(220, 220, 220);
+
+}
+
+/* .nomBague
+{
+    position: absolute;
+    margin: 8% auto 0 auto;
+} */
+
 
 /* Footer, pied de page */
 
@@ -365,3 +400,16 @@ src: url("fonts/Butler_Bold.otf");
    }
 
 
+
+
+
+
+
+
+
+/* MAPS */
+#maps
+{
+    text-align: center;
+    height: 100%;
+}

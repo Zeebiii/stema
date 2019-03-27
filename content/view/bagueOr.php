@@ -32,7 +32,7 @@
 
                 <ul>
                     <li class="angleGauchce">
-                        <a href="../">Acceuil</a> 
+                        <a href="../../">Acceuil</a> 
                     </li>
                     <li class="dropdown">
                         <a href="catalogue.php">Catalogue <i class="fas fa-arrow-down arrowDown"></i></a>

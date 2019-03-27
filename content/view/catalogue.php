@@ -2,7 +2,9 @@
 
     include '../BDD/app.php';
 
-    $reqOr = $bdd->query('SELECT * FROM produit WHERE genreProduit = (SELECT id FROM genreProduit WHERE nomGenre = "Bague Perle") ');
+    $reqPerle = $bdd->query('SELECT * FROM produit WHERE genreProduit = (SELECT id FROM genreProduit WHERE nomGenre = "Bague Perle") ');
+    $reqPierreFine = $bdd->query('SELECT * FROM produit WHERE genreProduit = (SELECT id FROM genreProduit WHERE nomGenre = "Bague Pierre Fine") ');
+    $reqCeramique = $bdd->query('SELECT * FROM produit WHERE genreProduit = (SELECT id FROM genreProduit WHERE nomGenre = "Bague Ceramique") ');
 
     // while($affOr = $reqOr->fetch(PDO::FETCH_BOTH))
     // {
@@ -10,11 +12,7 @@
     //     echo $affOr["idProduit"];
     //     echo $affOr[1];
     // }    
-   
-    while($affOr = $reqOr->fetchObject()) {
-        echo " ";
-        echo $affOr->idProduit;
-    }    
+     
     
 
 
@@ -39,6 +37,7 @@
     <title>Bijouterie Stema</title>
 </head>
 <body>
+
 
     <div id="main">
 
@@ -122,16 +121,24 @@
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
                             <br/>
-                            <a href="#">Voir plus</a>
+                            <a href="baguePerle.php">Voir plus</a>
 
                         </div>
                         <div class="owl-carousel owl-theme sliderCatalogue">
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Marae_Grande.png" data-lightbox="Marae"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" data-lightbox="Only_Tahiti"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Paea_Grande.png" data-lightbox="Paza"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Morgana_Grande.png" data-lightbox="Morgana"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" data-lightbox="Griffon_Perle"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" data-lightbox="Electre_Or_Blanc"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></a></div>
+                        <?php
+                            while($affPerle = $reqPerle->fetchObject()) {
+                        ?>
+                            <div class="item"><a href="<?=$affPerle->imageProduit?>" data-title="<?=$affPerle->nomProduit?>" data-lightbox="<?=$affPerle->nomProduit?>"><img src="<?=$affPerle->imageProduit?>" alt="<?=$affPerle->nomProduit?>"></a></div>
+                            
+                        <?php
+                            } 
+                        ?>
+                            <!-- <div class="item"><a href="../files/imgCatalogue/Bague_Marae_Grande.png" data-title="Nom bague : ..." data-lightbox="Marae"><img src="../files/imgCatalogue/Bague_Marae_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" data-title="Nom bague : ..." data-lightbox="Only_Tahiti"><img src="../files/imgCatalogue/Bague_Only_Tahiti_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Paea_Grande.png" data-title="Nom bague : ..." data-lightbox="Paza"><img src="../files/imgCatalogue/Bague_Paea_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Morgana_Grande.png" data-title="Nom bague : ..." data-lightbox="Morgana"><img src="../files/imgCatalogue/Bague_Morgana_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" data-title="Nom bague : ..." data-lightbox="Griffon_Perle"><img src="../files/imgCatalogue/Bague_Griffon_Perle_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" data-title="Nom bague : ..." data-lightbox="Electre_Or_Blanc"><img src="../files/imgCatalogue/Bague_Electre_Or_Blanc_Grande.png" alt=""></a></div> -->
                         </div>
                     </div>
                 </div>
@@ -147,22 +154,25 @@
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
                             <br/>
-                            <a href="#">Voir plus</a>
+                            <a href="pierreFine.php">Voir plus</a>
 
                         </div>
 
                         <div class="owl-carousel sliderBox sliderCatalogue">
 
-                            <?php
+                        <?php
+                            while($affPierreFine = $reqPierreFine->fetchObject()) {
+                        ?>
+                            <div class="item"><a href="<?=$affPierreFine->imageProduit?>" data-title="<?=$affPierreFine->nomProduit?>" data-lightbox="<?=$affPierreFine->nomProduit?>"><img src="<?=$affPierreFine->imageProduit?>" alt="<?=$affPierreFine->nomProduit?>"></a></div>
+                            
+                        <?php
+                            } 
+                        ?>
 
-                                
-
-                            ?>
-
-                            <div class="item"><a href="../files/imgCatalogue/Bague_lune_violette_Grande.png" data-lightbox="lune_violette"><img src="../files/imgCatalogue/Bague_lune_violette_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_fleur_cognac_Grande.png" data-lightbox="fleur_cognac"><img src="../files/imgCatalogue/Bague_fleur_cognac_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_neon_amethyste_Grande.png" data-lightbox="neon_amethyste"><img src="../files/imgCatalogue/Bague_neon_amethyste_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_bora_palme_Grande.png" data-lightbox="bora_palme"><img src="../files/imgCatalogue/Bague_bora_palme_Grande.png" alt=""></a></div>
+                            <!-- <div class="item"><a href="../files/imgCatalogue/Bague_lune_violette_Grande.png" data-title="Nom bague : ..." data-lightbox="lune_violette"><img src="../files/imgCatalogue/Bague_lune_violette_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_fleur_cognac_Grande.png" data-title="Nom bague : ..." data-lightbox="fleur_cognac"><img src="../files/imgCatalogue/Bague_fleur_cognac_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_neon_amethyste_Grande.png" data-title="Nom bague : ..." data-lightbox="neon_amethyste"><img src="../files/imgCatalogue/Bague_neon_amethyste_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_bora_palme_Grande.png" data-title="Nom bague : ..." data-lightbox="bora_palme"><img src="../files/imgCatalogue/Bague_bora_palme_Grande.png" alt=""></a></div> -->
                         </div>
                     </div>
                 </div>
@@ -178,17 +188,25 @@
                             interdum efficitur quam. Donec accumsan ut mi in dictum. Curabitur lorem turpis, efficitur vel egestas ut, 
                             vulputate eget nisi.
                             <br/>
-                            <a href="#">Voir plus</a>
+                            <a href="bagueCeramique.php">Voir plus</a>
 
                         </div>
 
                         <div class="owl-carousel owl-theme sliderCatalogue">
-                            <div class="item"><a href="../files/imgCatalogue/Bague_black_sparkle_Grande.png" data-lightbox="black_sparkle"><img src="../files/imgCatalogue/Bague_black_sparkle_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Xevelite_noire_diamants_Grande.png" data-lightbox="Xevelite_noire"><img src="../files/imgCatalogue/Bague_Xevelite_noire_diamants_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Nyx_Grande.png" data-lightbox="Nyx"><img src="../files/imgCatalogue/Bague_Nyx_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Hypnos_Grande.png" data-lightbox="Hypnos"><img src="../files/imgCatalogue/Bague_Hypnos_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_White_dawn_Grande.png" data-lightbox="White_dawn"><img src="../files/imgCatalogue/Bague_White_dawn_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Gourmette_Grande.png" data-lightbox="Gourmette"><img src="../files/imgCatalogue/Bague_Gourmette_Grande.png" alt=""></a></div>
+                            <?php
+                                while($affCeramique = $reqCeramique->fetchObject()) {
+                            ?>
+                                <div class="item"><a href="<?=$affCeramique->imageProduit?>" data-title="<?=$affCeramique->nomProduit?>" data-lightbox="<?=$affCeramique->nomProduit?>"><img src="<?=$affCeramique->imageProduit?>" alt="<?=$affCeramique->nomProduit?>"></a></div>
+                                
+                            <?php
+                                } 
+                            ?>
+                            <!-- <div class="item"><a href="../files/imgCatalogue/Bague_black_sparkle_Grande.png" data-title="Nom bague : ..." data-lightbox="black_sparkle"><img src="../files/imgCatalogue/Bague_black_sparkle_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Xevelite_noire_diamants_Grande.png" data-title="Nom bague : ..." data-lightbox="Xevelite_noire"><img src="../files/imgCatalogue/Bague_Xevelite_noire_diamants_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Nyx_Grande.png" data-title="Nom bague : ..." data-lightbox="Nyx"><img src="../files/imgCatalogue/Bague_Nyx_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Hypnos_Grande.png" data-title="Nom bague : ..." data-lightbox="Hypnos"><img src="../files/imgCatalogue/Bague_Hypnos_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_White_dawn_Grande.png" data-title="Nom bague : ..." data-lightbox="White_dawn"><img src="../files/imgCatalogue/Bague_White_dawn_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Gourmette_Grande.png" data-title="Nom bague : ..." data-lightbox="Gourmette"><img src="../files/imgCatalogue/Bague_Gourmette_Grande.png" alt=""></a></div> -->
                         </div>
                     </div>
                 </div>
@@ -206,16 +224,16 @@
                             vulputate eget nisi.
 
                             <br/>
-                            <a href="#">Voir plus</a>
+                            <a href="bagueOr.php">Voir plus</a>
 
                         </div>
 
                         <div class="owl-carousel owl-theme sliderCatalogue">
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Angel_Or_Jaune_Grande.png" data-lightbox="Angel_Or_Jaune"><img src="../files/imgCatalogue/Bague_Angel_Or_Jaune_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" data-lightbox="Angel_Or_Blanc"><img src="../files/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_adorable_jaune_Grande.png" data-lightbox="adorable_jaune"><img src="../files/imgCatalogue/Bague_adorable_jaune_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_ellipses_Grande.png" data-lightbox="ellipses"><img src="../files/imgCatalogue/Bague_ellipses_Grande.png" alt=""></a></div>
-                            <div class="item"><a href="../files/imgCatalogue/Bague_brindille_or_blanc_Grande.png" data-lightbox="brindille_or"><img src="../files/imgCatalogue/Bague_brindille_or_blanc_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Angel_Or_Jaune_Grande.png" data-title="Nom bague : ..." data-lightbox="Angel_Or_Jaune"><img src="../files/imgCatalogue/Bague_Angel_Or_Jaune_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" data-title="Nom bague : ..." data-lightbox="Angel_Or_Blanc"><img src="../files/imgCatalogue/Bague_Angel_Or_Blanc_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_adorable_jaune_Grande.png" data-title="Nom bague : ..." data-lightbox="adorable_jaune"><img src="../files/imgCatalogue/Bague_adorable_jaune_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_ellipses_Grande.png" data-title="Nom bague : ..." data-lightbox="ellipses"><img src="../files/imgCatalogue/Bague_ellipses_Grande.png" alt=""></a></div>
+                            <div class="item"><a href="../files/imgCatalogue/Bague_brindille_or_blanc_Grande.png" data-title="Nom bague : ..." data-lightbox="brindille_or"><img src="../files/imgCatalogue/Bague_brindille_or_blanc_Grande.png" alt=""></a></div>
                         </div>
                     </div>
                     
