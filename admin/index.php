@@ -1,5 +1,7 @@
 <?php
     include 'content/BDD/appAdmin.php';
+
+    // header('location: index.php');
 ?>
 
 
